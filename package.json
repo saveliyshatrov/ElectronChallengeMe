@@ -1,0 +1,17 @@
+{
+  "name": "electron-js",
+  "version": "0.0.1",
+  "description": "first-try",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "author": "Saveliy Shatrov",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.0.0"
+  },
+  "dependencies": {
+    "webcamjs": "^1.0.26"
+  }
+}

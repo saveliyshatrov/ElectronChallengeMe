@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <title>ChallengeMe</title>
+  </head>
+  <body class="background-light-gray" style="margin-bottom: 20px;">
+    <nav
+      class="navbar navbar-expand-lg color-nav-bar bg-white sticky-top"
+    >
+      <span class="logo text-white">
+        ChallengeMe
+      </span>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+
+      <form class="form-inline">
+        <a href="index.html" class="btn btn-outline-light" type="submit">
+            Главная
+          </a>
+        <a href="index-graph.html" class="btn btn-outline-light my-2 my-sm-2 ml-2">
+          Графики
+        </a>
+        <a href="#" class="btn btn-light my-2 my-sm-2 ml-2">
+          Помощь
+        </a>
+        <a href="index2.html" class="btn btn-outline-light my-2 my-sm-2 ml-2">
+          Выход
+        </a>
+      </form>
+    </nav>
+    <div class="container">
+        <div class="row">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <button type="button" class="btn btn-outline-secondary">Action</button>
+              <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+            </div>
+            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+          </div>
+            <div class="mt-3 col-md-12 border rounded background-white">
+                <p class="mt-3 mb-3">вопрос</p>
+            </div>
+            <div class="mt-2 col-md-1 border rounded background-white text-center">
+                <p class="mt-3 mb-3">2</p>
+            </div>
+            <div class="mt-2 col-md-11 border rounded background-white">
+                <p class="mt-3 mb-3">вопрос</p>
+            </div>
+            <div class="mt-2 col-md-1 border rounded background-white text-center">
+                <p class="mt-3 mb-3">3</p>
+            </div>
+            <div class="mt-2 col-md-11 border rounded background-white">
+                <p class="mt-3 mb-3">вопрос</p>
+            </div>
+
+              <div class="input-group mt-3">
+                <textarea class="form-control" placeholder="Напишите о вашей проблеме"></textarea>
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-success background-white border rounded-right border-success" type="button">Отправить</button>
+                  </div>
+              </div>
+        </div>
+    </div>
+  </body>
+</html>

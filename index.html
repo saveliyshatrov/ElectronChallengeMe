@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./dist/qrious.js"></script>
+    <script>
+      var qr = window.qr = new QRious({
+          element: document.getElementById('qrious'),
+          value: "ChallengeMe"
+        });
+      var t=setInterval(UpdateQR, 800);
+      function UpdateQR() {
+        var qr = window.qr = new QRious({
+          element: document.getElementById('qrious'),
+          size: 250,
+          value: btoa("ChallengeMe " + "CompanyName Something" + new Date().toISOString())
+        });
+      };
+    </script>
+    <title>ChallengeMe</title>
+  </head>
+  <body class="background-light-gray" style="margin-bottom: 20px;">
+    <nav
+      class="navbar navbar-expand-lg color-nav-bar bg-white sticky-top"
+    >
+      <span class="logo text-white">
+        ChallengeMe
+      </span>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+
+      <form class="form-inline">
+        <a class="btn btn-outline-light my-2 my-sm-2 ml-2" type="submit" onclick="">
+          ТЕСТ
+        </a>
+        <a href="index-graph.html" class="btn btn-outline-light my-2 my-sm-2 ml-2" type="submit">
+          Графики
+        </a>
+        <a href="index-help.html" class="btn btn-outline-light my-2 my-sm-2 ml-2" type="submit">
+          Помощь
+        </a>
+        <a href="index2.html" class="btn btn-outline-light my-2 my-sm-2 ml-2" type="submit"">
+          Выход
+        </a>
+      </form>
+    </nav>
+
+    <div class="container-fluid " style="margin-top: 20px;">
+      <div class="container">
+        <div class="row background-white border rounded">
+          <div class="col-md-4 mt-3 mb-3">
+            <img id="qrious" class="border-radius5" style="width: 100%; height: 100%;">
+            <!-- <img class=" border rounded" style="width: 100%;"src="IMG.png" alt=""> -->
+          </div>
+          <div class="col-md-8 mt-3 mb-3 vertical-align-middle">
+            NAME OF USER
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="margin-top: 20px;">
+      <div class="container border rounded background-white">
+        <table class="table" id="tblCustomers" >
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Имя</th>
+              <th scope="col">Номер телефона</th>
+              <th scope="col">Почта</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Марк</td>
+              <td>+7(999)999-99-99</td>
+              <td>mail@mail.com</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Марк</td>
+              <td>+7(999)999-99-99</td>
+              <td>mail@mail.com</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Марк</td>
+              <td>+7(999)999-99-99</td>
+              <td>mail@mail.com</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Марк</td>
+              <td>+7(999)999-99-99</td>
+              <td>mail@mail.com</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Марк</td>
+              <td>+7(999)999-99-99</td>
+              <td>mail@mail.com</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Марк</td>
+              <td>+7(999)999-99-99</td>
+              <td>mail@mail.com</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Марк</td>
+              <td>+7(999)999-99-99</td>
+              <td>mail@mail.com</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Марк</td>
+              <td>+7(999)999-99-99</td>
+              <td>mail@mail.com</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Марк</td>
+              <td>+7(999)999-99-99</td>
+              <td>mail@mail.com</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>Марк</td>
+              <td>+7(999)999-99-99</td>
+              <td>mail@mail.com</td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td>Марк</td>
+              <td>+7(999)999-99-99</td>
+              <td>mail@mail.com</td>
+            </tr>
+            <tr>
+              <th scope="row">12</th>
+              <td>Марк</td>
+              <td>+7(999)999-99-99</td>
+              <td>mail@mail.com</td>
+            </tr>
+            <tr>
+              <th scope="row">13</th>
+              <td>Марк</td>
+              <td>+7(999)999-99-99</td>
+              <td>mail@mail.com</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="btn btn-outline-success width100 mb-4">
+          Экспортировать таблицу
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

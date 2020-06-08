@@ -1,0 +1,68 @@
+.logo {
+  font-family: "Kaushan Script", cursive;
+  font-size: x-large;
+}
+
+.logo-login {
+  font-family: "Kaushan Script", cursive;
+  font-size: xx-large;
+}
+
+.color-nav-bar {
+  background: linear-gradient(-90deg, #3498db, #8e44ad);
+}
+
+.background-light-gray {
+  background-color: #f2eff2;
+}
+
+.blue-color {
+  color: #ffffff;
+  background-color: #3498db;
+  border-color: #3498db;
+}
+
+.violet-color {
+  color: #ffffff;
+  background-color: #8e44ad;
+  border-color: #8e44ad;
+}
+
+.input {
+  background-color: white;
+  height: 50px;
+}
+.background-white {
+  background-color: white;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.height40 {
+  height: 40%;
+}
+
+.width350 {
+  width: 350px;
+}
+
+.vertical-align-middle {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.border-radius5{
+  border-radius: 5px;
+}
+
+.vertical-align-middle-for-block{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}

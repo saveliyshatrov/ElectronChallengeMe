@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ChallengeMe</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <script language="JavaScript">
+      function displayLineChart() {
+        var data = {
+          labels: [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+          ],
+          datasets: [
+            {
+              label: "",
+              fillColor: "rgba(142,68,173,0.2)",
+              strokeColor: "#8E44AD",
+              pointColor: "rgba(142,68,173,1)",
+              pointStrokeColor: "#8E44AD",
+              pointHighlightFill: "#8E44AD",
+              pointHighlightStroke: "rgba(220,220,220,1)",
+              data: [
+                2000,
+                3000,
+                5000,
+                7000,
+                11000,
+                13000,
+                17000,
+                19000,
+                23000,
+                29000,
+                7000,
+                6000,
+                1000,
+                2000,
+                3000,
+                5000,
+                8000,
+                13000,
+                21000,
+                34000,
+              ],
+            },
+            {
+              label: "",
+              fillColor: "rgba(52,152,219,0.2)",
+              strokeColor: "#3498DB",
+              pointColor: "rgba(52,152,219,1)",
+              pointStrokeColor: "#3498DB",
+              pointHighlightFill: "#3498DB",
+              pointHighlightStroke: "rgba(151,187,205,1)",
+              data: [
+                800,
+                1000,
+                1000,
+                2000,
+                3000,
+                5000,
+                8000,
+                13000,
+                21000,
+                34000,
+                8000,
+                6900,
+                5000,
+                7000,
+                11000,
+                13000,
+                17000,
+                19000,
+                23000,
+                29000,
+              ],
+            },
+          ],
+        };
+        var ctx = document.getElementById("lineChart").getContext("2d");
+        var options = {};
+        var lineChart = new Chart(ctx).Line(data, options);
+      }
+    </script>
+  </head>
+  <body
+    class="background-light-gray"
+    style="margin-bottom: 20px;"
+    onload="displayLineChart();"
+  >
+    <nav class="navbar navbar-expand-lg color-nav-bar bg-white sticky-top">
+      <span class="logo text-white">
+        ChallengeMe
+      </span>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+
+      <form class="form-inline">
+        <a href="index.html" class="btn btn-outline-light">
+          Главная
+        </a>
+        <a href="#" class="btn btn-light my-2 my-sm-2 ml-2">
+          Графики
+        </a>
+        <a
+          href="index-help.html"
+          class="btn btn-outline-light my-2 my-sm-2 ml-2"
+        >
+          Помощь
+        </a>
+        <a href="index2.html" class="btn btn-outline-light my-2 my-sm-2 ml-2">
+          Выход
+        </a>
+      </form>
+    </nav>
+
+    <div class="container mt-5 background-white border rounded">
+      <canvas class="width100 height40 mt-3 mb-3"  id="lineChart"></canvas>
+      <div class="row mb-3 ml-3">
+        <div class="col-md-1">
+          <button class="btn blue-color width100"></button>
+        </div>
+        <div class="col-md-11">Blue line</div>
+        <div class="col-md-1">
+          <button class="btn violet-color width100"></button>
+        </div>
+        <div class="col-md-11">Violet line</div>
+      </div>
+    </div>
+
+  </body>
+</html>
