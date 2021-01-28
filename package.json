@@ -9,7 +9,7 @@
   "author": "Saveliy Shatrov",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^9.0.0"
+    "electron": "^9.4.0"
   },
   "dependencies": {
     "webcamjs": "^1.0.26"
